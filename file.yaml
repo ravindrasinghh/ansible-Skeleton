@@ -5,7 +5,7 @@
   roles:
     - ./test
   vars:
-    wazuh_managers:
-      - address: 10.*.*.*
-        port: 1514
+    test1:
+      - address: *.*.*.*
+        port: 1345
         protocol: tcp
