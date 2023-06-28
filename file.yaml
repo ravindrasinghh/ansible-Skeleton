@@ -1,0 +1,11 @@
+---
+- hosts: centos
+  become: yes
+  gather_facts: true
+  roles:
+    - ./test
+  vars:
+    wazuh_managers:
+      - address: 10.*.*.*
+        port: 1514
+        protocol: tcp
